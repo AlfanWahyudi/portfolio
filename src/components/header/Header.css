@@ -1,0 +1,24 @@
+.about p {
+  color: #616161;
+}
+
+.about p:nth-child(1){
+  margin-bottom: 20px;
+}
+
+.about p:nth-child(2) {
+  margin-bottom: 25px;
+}
+
+
+.more_info {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.more_info .btn {
+  margin-left: auto;
+}

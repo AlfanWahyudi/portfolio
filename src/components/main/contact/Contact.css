@@ -1,0 +1,78 @@
+
+#contact .container h2 {
+  margin-top: 20px;
+}
+
+.contact_item {
+  display: flex;
+  flex-direction: column;
+}
+
+.detail_contact {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.detail_contact .middle{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.contact_icon {
+  width: 35px;
+  max-height: 35px;
+  padding: 3px 0;
+  text-align: center;
+}
+
+.detail_contact .middle .fa-solid {
+  font-size: 30px;
+  color: #30475E;
+}
+
+form .row {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.form_label {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: 100%;
+  min-height: 30px;
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #D7D7D7;
+  color: #7a7a7a;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+textarea {
+  resize: none;
+}
+
+input:focus, textarea:focus {
+  border: 1px solid #e9e9e9;
+  background-color: #fdfeff;
+  color: #7a7a7a;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.btn_form {
+  color: #fff;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}

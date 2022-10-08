@@ -1,5 +1,5 @@
 import React from "react";
-import "../../../App.css";
+import "./Project.css";
 
 function Project() {
   const BASE_URL = "https://alfanwahyudi.github.io";

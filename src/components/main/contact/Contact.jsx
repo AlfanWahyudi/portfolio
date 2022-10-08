@@ -1,5 +1,5 @@
 import React from "react";
-import '../../../App.css';
+import './Contact.css';
 
 function Contact() {
   return (
@@ -12,7 +12,7 @@ function Contact() {
               <div class="contact_icon">
                 <i class="fa-solid fa-envelope"></i>
               </div>
-              <a href="">alfan.wahyudi98@gmail.com</a>
+              <a href="?">alfan.wahyudi98@gmail.com</a>
             </div>
             <div class="middle">
               <div class="contact_icon">
