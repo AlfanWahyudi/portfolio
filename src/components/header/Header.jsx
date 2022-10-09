@@ -19,17 +19,17 @@ function Header() {
         </div>
         <div class="more_info">
           <button class="btn_icon">
-            <a href="https://twitter.com/Wahyudi_Alfann" target="_blank">
+            <a href="https://twitter.com/Wahyudi_Alfann" target="_blank" rel="noreferrer">
               <i class="fa-brands fa-twitter"></i>
             </a>
           </button>
           <button class="btn_icon">
-            <a href="https://www.instagram.com/alfan.id/" target="_blank">
+            <a href="https://www.instagram.com/alfan.id/" target="_blank" rel="noreferrer">
               <i class="fa-brands fa-instagram"></i>
             </a>
           </button>
           <button class="btn_icon">
-            <a href="https://github.com/AlfanWahyudi" target="_blank">
+            <a href="https://github.com/AlfanWahyudi" target="_blank" rel="noreferrer">
               <i class="fa-brands fa-github"></i>
             </a>
           </button>
