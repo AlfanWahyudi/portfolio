@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
-import emailjs from '@emailjs/browser';
-import './Contact.css';
+import emailjs from "@emailjs/browser";
+import Modal from "../../modal/Modal";
+import "./Contact.css";
 
 function Contact() {
   const EMAIL_JS_SERVICE_ID = "service_portfolio_alfan";
@@ -8,16 +9,56 @@ function Contact() {
   const EMAIL_JS_PUBLIC_KEY = "9MI9ak1AMsDFcfmaB";
   const form = useRef();
 
+  const [modal, setModal] = React.useState({
+    message: "",
+    isShow: false,
+    isShowCloseBtn: false,
+  });
+
   const sendEmail = (e) => {
     e.preventDefault();
 
+    setModal(prevModal => ({
+      ...prevModal,
+      isShow: true,
+      message: "Please wait..."
+    }));
+
     emailjs.sendForm(EMAIL_JS_SERVICE_ID, EMAIL_JS_TEMPLATE_ID, form.current, EMAIL_JS_PUBLIC_KEY)
-      .then((result) => console.log(result.text))
-      .catch((error) => console.log(error.text))
+      .then(() => {
+        setModal(prevModal => ({
+          ...prevModal,
+          message: "Successfully sent email thank you 😊",
+          isShowCloseBtn: true
+        }));
+      })
+      .catch((error) => {
+        setModal(prevModal => ({
+          ...prevModal,
+          message: error.text,
+          isShowCloseBtn: true
+        }));
+      });
+  }
+
+  const close = (isClosed) => {
+    setModal(prevModal => (
+      {
+        ...prevModal,
+        isShow: !isClosed,
+      }));
   }
 
   return (
     <section id="contact">
+      {modal.isShow && (
+        <Modal
+          message={modal.message}
+          isShowCloseBtnModal={modal.isShowCloseBtn}
+          isShowModal={modal.isShow}
+          onClose={close}
+        />
+      )}
       <div className="container">
         <h2>Contact</h2>
         <div className="contact_item">
@@ -26,7 +67,9 @@ function Contact() {
               <div className="contact_icon">
                 <i className="fa-solid fa-envelope"></i>
               </div>
-              <a href="mailto:alfan.wahyudi98@gmail.com">alfan.wahyudi98@gmail.com</a>
+              <a href="mailto:alfan.wahyudi98@gmail.com">
+                alfan.wahyudi98@gmail.com
+              </a>
             </div>
             <div className="middle">
               <div className="contact_icon">
