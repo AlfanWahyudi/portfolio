@@ -1,0 +1,61 @@
+.card-modal {
+  position: fixed;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ffffff;
+  border: 1px solid #606060;
+  border-radius: 7px;
+  min-width: 60%;
+  min-height: 52px;
+  padding-left: 0.9em;
+  padding-right: 0.5em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 999;
+}
+
+.card-modal--wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 45px;
+}
+
+.btn-close-modal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  outline: none;
+  background-color: #ffffff;
+  border: none;
+  font-size: 14px;
+}
+
+.card-modal--message {
+  max-width: 90%;
+  font-size: 14px;
+  color: #121212;
+  font-weight: 500;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(33, 37, 41, 0.7);
+  display: block;
+}
+
+.overlay--show {
+  display: block;
+}
+
+@media only screen  and (min-width: 585px){
+  .card-modal {
+    min-width: 365px;
+  }
+}
