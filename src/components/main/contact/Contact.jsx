@@ -7,7 +7,7 @@ function Contact() {
   const EMAIL_JS_SERVICE_ID = "service_portfolio_alfan";
   const EMAIL_JS_TEMPLATE_ID = "portfolio";
   const EMAIL_JS_PUBLIC_KEY = "9MI9ak1AMsDFcfmaB";
-  const form = useRef();
+  const formRef = useRef();
 
   const [modal, setModal] = React.useState({
     message: "",
@@ -18,35 +18,41 @@ function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    setModal(prevModal => ({
+    setModal((prevModal) => ({
       ...prevModal,
       isShow: true,
-      message: "Please wait..."
+      message: "Please wait...",
     }));
 
-    emailjs.sendForm(EMAIL_JS_SERVICE_ID, EMAIL_JS_TEMPLATE_ID, form.current, EMAIL_JS_PUBLIC_KEY)
+    emailjs
+      .sendForm(
+        EMAIL_JS_SERVICE_ID,
+        EMAIL_JS_TEMPLATE_ID,
+        formRef.current,
+        EMAIL_JS_PUBLIC_KEY
+      )
       .then(() => {
-        setModal(prevModal => ({
+        setModal((prevModal) => ({
           ...prevModal,
           message: "Successfully sent email thank you 😊",
-          isShowCloseBtn: true
+          isShowCloseBtn: true,
         }));
+        formRef.current.reset();
       })
       .catch((error) => {
-        setModal(prevModal => ({
+        setModal((prevModal) => ({
           ...prevModal,
           message: error.text,
-          isShowCloseBtn: true
+          isShowCloseBtn: true,
         }));
       });
   }
 
   const close = (isClosed) => {
-    setModal(prevModal => (
-      {
-        ...prevModal,
-        isShow: !isClosed,
-      }));
+    setModal((prevModal) => ({
+      ...prevModal,
+      isShow: !isClosed,
+    }));
   }
 
   return (
@@ -78,7 +84,7 @@ function Contact() {
               <span>Sukabumi, Jawa Barat Indonesia</span>
             </div>
           </div>
-          <form ref={form} onSubmit={sendEmail}>
+          <form ref={formRef} onSubmit={sendEmail}>
             <input type="hidden" name="to_name" value="Alfan Wahyudi" />
             <div className="row">
               <div className="col">
@@ -98,7 +104,10 @@ function Contact() {
                   rows="10"
                 ></textarea>
               </div>
-              <button className="btn btn_form" type="submit">
+              <button
+                className="btn btn_form"
+                type="submit"
+              >
                 Send
               </button>
             </div>
