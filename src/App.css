@@ -72,6 +72,10 @@ header {
   border-top: 1.5px solid #D7D7D7;
 }
 
+.no-scroll-y {
+  overflow: hidden !important;
+}
+
 @media only screen  and (min-width: 325px){
   .more_info {
     max-width: 285px;
