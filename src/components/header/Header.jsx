@@ -1,42 +1,42 @@
 import React from "react";
 import './Header.css';
+import menuIcon from  '../../assets/icons/menu.svg';
+import gitIcon from '../../assets/icons/github.svg';
+import linkedinIcon from '../../assets/icons/linkeind.svg';
 
 function Header() {
   return (
     <header>
-      <div class="container">
-        <h1 class="title">Hi, I am Alfan Wahyudi</h1>
-        <div class="about">
-          <p>
-            I'm a computer science graduate with programming and software
-            development skills based in Indonesia. After graduation, I often
-            practice programming skills to be better than before.
-          </p>
-          <p>
-            Apart from that, I focus on making websites that are modern and
-            efficient to use.
-          </p>
-        </div>
-        <div class="more_info">
-          <button class="btn_icon">
-            <a href="https://twitter.com/Wahyudi_Alfann" target="_blank" rel="noreferrer">
-              <i class="fa-brands fa-twitter"></i>
-            </a>
-          </button>
-          <button class="btn_icon">
-            <a href="https://www.instagram.com/alfan.id/" target="_blank" rel="noreferrer">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-          </button>
-          <button class="btn_icon">
-            <a href="https://github.com/AlfanWahyudi" target="_blank" rel="noreferrer">
-              <i class="fa-brands fa-github"></i>
-            </a>
-          </button>
-          <button class="btn">
-            <a href="#contact">Contact</a>
-          </button>
-        </div>
+      <div className="container container__header">
+        <a href="/" className="">Alfan Wahyudi</a>
+        <button className="btn-menu">
+          <img src={menuIcon} className="btn__menu-img" alt="Menu icon" />
+        </button>
+        <nav className="navbar">
+          <ul className="nav">
+            <li className="nav-item">
+              <a href="#home" className="nav-link">Home</a>
+            </li>
+            <li className="nav-item">
+              <a href="#projects" className="nav-link">Projects</a>
+            </li>
+            <li className="nav-item">
+              <a href="#contact" className="nav-link">Contact</a>
+            </li>
+          </ul>
+          <ul className="social-media">
+            <li className="social-media-item">
+              <a href="/" className="social-media-link" target="blank">
+                <img src={gitIcon} className="social-media-img" alt="github icon" />
+              </a>
+            </li>
+            <li className="social-media-item">
+              <a href="/" className="social-media-link" target="blank">
+                <img src={linkedinIcon} className="social-media-img" alt="linkedin icon" />
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
   );
