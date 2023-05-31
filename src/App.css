@@ -23,26 +23,34 @@ a {
 }
 
 .btn {
-  min-height: 40px;
-  padding: 1rem 2rem;
+  min-height: 3.5rem;
+  padding: 1rem 2.5rem;
   border-radius: 60rem;
   outline: 0;
   background: transparent;
   border: 1.5px solid var(--black); 
   color: var(--black);
   font-size: inherit;
+  font-family: inherit;
   font-weight: 500;
   cursor: pointer;
 }
+
+.btn > * {
+  font-size: 1.2rem;
+  font-family: inherit;
+}
+
+.btn:hover {
+  background: #26384b;
+}
+
 
 .btn__primary {
   border: 1px solid var(--green);
   background-color: var(--green);
 }
 
-.btn:hover {
-  background: #26384b;
-}
 
 .btn_icon {
   width: 44px;

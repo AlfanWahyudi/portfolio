@@ -21,7 +21,3 @@
   display: flex;
   gap: 2rem;
 }
-
-.btn__hero > a {
-  font-size: 1.2rem;
-}

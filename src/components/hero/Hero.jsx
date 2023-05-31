@@ -11,10 +11,10 @@ function Hero() {
             Memilih teknologi yang tepat dan memperhatikan user experince.</p>
         </hgroup>
         <div className="hero-cta">
-          <button className="btn btn__primary btn__hero">
+          <button className="btn btn__primary">
             <a href="#contact">Contact</a>
           </button>
-          <button className="btn btn__hero">
+          <button className="btn">
             <a href="/">Download CV</a>
           </button>
         </div>
