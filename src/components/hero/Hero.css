@@ -1,0 +1,27 @@
+.container__hero {
+  min-height: 45rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+  align-content: center;
+}
+
+.hero-hgroup {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.hero-hgroup-title {
+  margin-bottom: 3rem;
+  font-size: 2.4rem;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 2rem;
+}
+
+.btn__hero > a {
+  font-size: 1.2rem;
+}

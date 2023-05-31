@@ -12,7 +12,6 @@ a {
 }
 
 .container {
-  height: 100%;
   margin: 0 1.8rem;
 }
 
@@ -24,10 +23,12 @@ a {
 }
 
 .btn {
-  max-height: 40px;
-  padding: 1rem;
+  min-height: 40px;
+  padding: 1rem 2rem;
   border-radius: 60rem;
-  border: 1px solid var(--black); 
+  outline: 0;
+  background: transparent;
+  border: 1.5px solid var(--black); 
   color: var(--black);
   font-size: inherit;
   font-weight: 500;
@@ -37,10 +38,6 @@ a {
 .btn__primary {
   border: 1px solid var(--green);
   background-color: var(--green);
-}
-
-.btn a {
-  color: #fff;
 }
 
 .btn:hover {
@@ -83,7 +80,6 @@ a {
 @media only screen  and (min-width: 920px){
   .container {
     max-width: 97.2rem;
-    height: 100%;
     margin: 0 auto;
   }
 }
