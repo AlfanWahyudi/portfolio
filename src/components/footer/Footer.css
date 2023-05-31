@@ -1,0 +1,59 @@
+footer {
+  height: 36.7rem;
+  background-color: var(--light-gray);
+}
+
+.container__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.container__contact h2 {
+  text-align: center;
+  font-size: 2.2rem;
+}
+
+.contact {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.contact-email {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.email-img {
+  width: 1.5rem;
+  height: auto;
+}
+
+.contact-social-media {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.contact-social-medial-item > a > img {
+  height: 4rem;
+}
+
+.copy-right {
+  padding: 0.7rem;
+}
+
+.copy-right > p {
+  font-size: 1.2rem;
+  font-weight: medium;
+}
