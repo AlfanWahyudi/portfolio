@@ -1,7 +1,7 @@
 import React from "react";
 import "./Project.css";
-import githubIcon from '../../../assets/icons/github.svg';
-import boxArrowUpIcon from '../../../assets/icons/box-arrow-up-right.svg';
+import github from '../../../assets/icons/github.svg';
+import boxArrowUpWhite from '../../../assets/icons/box-arrow-up-right-white.svg';
 
 function Project() {
   return (
@@ -16,15 +16,15 @@ function Project() {
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting 
                 industry. Lorem Ipsum has been the industry's standard dummy text</p>
               <section className="project-actions">
-                <button className="btn btn__project">
+                <button className="btn btn-link btn__project">
                   <a href="/">
-                    <img src={githubIcon} alt="github icon" />
+                    <img src={github} alt="github icon" />
                     Code
                   </a>
                 </button>
-                <button className="btn btn__project">
+                <button className="btn btn-link btn-link__primary btn__project">
                   <a href="/">
-                    <img src={boxArrowUpIcon} alt="box arrow up icon" />  
+                    <img src={boxArrowUpWhite} alt="box arrow up icon" />  
                     Live Site
                   </a>
                 </button>

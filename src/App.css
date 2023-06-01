@@ -23,9 +23,8 @@ a {
 }
 
 .btn {
-  display: flex;
   min-height: 3.5rem;
-  padding: 1.2rem 2.5rem;
+  padding: 1.1rem 2.5rem;
   border-radius: 60rem;
   outline: 0;
   background: transparent;
@@ -42,11 +41,6 @@ a {
   font-family: inherit;
 }
 
-.btn:hover {
-  background: #26384b;
-}
-
-
 .btn__primary {
   border: 1px solid var(--green);
   background-color: var(--green);
@@ -56,15 +50,34 @@ a {
   color: white;
 }
 
+.btn-link {
+  padding: 0;
+}
 
-.btn_icon {
-  width: 44px;
-  height: 44px;
-  padding: none;
-  border: none;
-  outline: none;
-  background: none;
-  margin-right: 5px;
+.btn-link > a {
+  display: block;
+  padding: 1.1rem 2.5rem;
+  border-radius: 30rem;
+}
+
+.btn-link__primary,
+.btn-link__primary-hover {
+  transition: background-color 200ms;
+  border-color: var(--green);
+  background-color: var(--green);
+}
+
+.btn-link__primary > a,
+.btn-link__primary-hover > a {
+  color: white;
+}
+
+.btn-link__primary-hover:hover {
+  background-color: white;
+}
+
+.btn-link__primary-hover > a:hover {
+  color: var(--green);
 }
 
 .divider {
