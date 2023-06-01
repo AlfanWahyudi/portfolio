@@ -42,11 +42,15 @@ footer {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 2.3rem;
 }
 
-.contact-social-medial-item > a > img {
-  height: 4rem;
+.contact-social-media-item > a {
+  display: flex;
+}
+
+.contact-social-media-item > a > img {
+  height: 2.5rem;
 }
 
 .copy-right {
