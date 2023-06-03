@@ -2,6 +2,7 @@ import React from "react";
 import "./Project.css";
 import github from '../../../assets/icons/github.svg';
 import boxArrowUpWhite from '../../../assets/icons/box-arrow-up-right-white.svg';
+import rpsGameImg from '../../../assets/images/rps-game.png';
 
 function Project() {
   return (
@@ -10,7 +11,7 @@ function Project() {
         <h2>Projects</h2>
         <div class="list_projects">
           <article className="card-project">
-            <img src="" className="project-img" alt="project img thumbnail" />
+            <img src={rpsGameImg} className="project-img" alt="project img thumbnail" />
             <div className="project-desc">
               <h3 className="project-title">Lorem Title</h3>
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting 
