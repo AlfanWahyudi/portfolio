@@ -1,3 +1,10 @@
+.divider__vertical-header {
+  display: none;
+  height: 3rem;
+  width: 1px;
+  border-left: 0.5px solid var(--black);
+}
+
 header {
   background: white;
   overflow-x: hidden;
@@ -64,6 +71,7 @@ header {
 .nav-link {
   padding: 0.8rem 0.5rem;
   font-size: 1.4rem;
+  font-weight: 500;
   display: block;
 }
 
@@ -77,6 +85,10 @@ header {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+}
+
+.social-media-link {
+  display: flex;
 }
 
 .social-media-img {

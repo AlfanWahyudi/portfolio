@@ -91,8 +91,44 @@ a {
   overflow: hidden !important;
 }
 
-@media only screen  and (min-width: 325px){
+@media only screen  and (min-width: 600px){
+  .divider__vertical-header {
+    display: block;
+  }
+  
+  .btn-menu {
+    display: none;
+  }
 
+  .navbar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: static;
+    padding: 1.7rem 0;
+  }
+
+  .nav {
+    flex-direction: row;
+    margin: 0;
+  }
+
+  .nav-item {
+    padding: 0;
+    border: 0;
+  }
+
+  .nav-link {
+    display: inline;
+    padding: 0.4em 1em;
+  }
+  .social-media {
+    padding-left: 1rem;
+  }
+  .social-media-img {
+    width: 2rem;
+    height: 2rem;
+  }
 }
 
 @media only screen  and (min-width: 470px){
