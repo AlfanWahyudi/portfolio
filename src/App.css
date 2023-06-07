@@ -12,7 +12,10 @@ a {
 }
 
 .container {
-  margin: 0 1.8rem;
+  max-width: 105rem;
+  margin: 0 auto;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
 }
 
 .title{
@@ -91,11 +94,15 @@ a {
   overflow: hidden !important;
 }
 
+@media only screen and (min-width: 550px) {
+
+}
+
 @media only screen  and (min-width: 600px){
   .divider__vertical-header {
     display: block;
   }
-  
+
   .btn-menu {
     display: none;
   }
@@ -129,19 +136,31 @@ a {
     width: 2rem;
     height: 2rem;
   }
-}
 
-@media only screen  and (min-width: 470px){
+  .card-project {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 0;
+  }
 
+  .project-desc {
+    justify-content: center;
+    margin-right: 4%;
+  }
+
+  .project-img {
+    width: 50%;
+    max-width: 487px;
+    max-height: 303px;
+  }
+
+  .project-actions {
+    justify-content: left;
+  }
 }
 
 @media only screen  and (min-width: 700px){
-
-}
-
-@media only screen  and (min-width: 920px){
-  .container {
-    max-width: 97.2rem;
-    margin: 0 auto;
+  .project-img {
+    width: 100%;
   }
 }
