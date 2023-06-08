@@ -129,6 +129,12 @@ a {
     display: inline;
     padding: 0.4em 1em;
   }
+
+  .nav-link:hover {
+    background-color: transparent;
+    color: var(--green);
+  }
+
   .social-media {
     padding-left: 1rem;
   }
