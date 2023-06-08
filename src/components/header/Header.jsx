@@ -34,12 +34,12 @@ function Header() {
           <div className="divider__vertical-header"></div>
           <ul className="social-media">
             <li className="social-media-item">
-              <a href="/" className="social-media-link" target="blank">
+              <a href="https://github.com/AlfanWahyudi" className="social-media-link" target="blank">
                 <img src={git} className="social-media-img" alt="github icon" />
               </a>
             </li>
             <li className="social-media-item">
-              <a href="/" className="social-media-link" target="blank">
+              <a href="https://www.linkedin.com/in/alfanwahyudi" className="social-media-link" target="blank">
                 <img src={linkedin} className="social-media-img" alt="linkedin icon" />
               </a>
             </li>

@@ -7,9 +7,9 @@ import rpsGameImg from '../../../assets/images/rps-game.png';
 function Project() {
   return (
     <section id="projects">
-      <div class="container container__project">
+      <div className="container container__project">
         <h2>Projects</h2>
-        <div class="list_projects">
+        <div className="list_projects">
           <article className="card-project">
             <img src={rpsGameImg} className="project-img" alt="project img thumbnail" />
             <div className="project-desc">
