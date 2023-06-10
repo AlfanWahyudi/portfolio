@@ -1,5 +1,6 @@
 import React from "react";
 import "./Project.css";
+import Projects from "../../../data/Project";
 import github from '../../../assets/icons/github.svg';
 import boxArrowUpWhite from '../../../assets/icons/box-arrow-up-right-white.svg';
 import rpsGameImg from '../../../assets/images/rps-game.png';
