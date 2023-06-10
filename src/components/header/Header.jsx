@@ -12,6 +12,14 @@ function Header() {
     setMenuOpen(!menuOpen);
   }
 
+  window.addEventListener('resize', () => {
+    const width = document.body.clientWidth;
+
+    if (width > 600) {
+      setMenuOpen(false);
+    }
+  });
+
   return (
     <header>
       <div className="container container__header">
