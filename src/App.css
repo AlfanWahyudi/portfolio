@@ -94,7 +94,13 @@ a {
   overflow: hidden !important;
 }
 
-@media only screen  and (min-width: 600px){
+@media only screen  and (min-width: 500px) {
+  .hero-hgroup > * {
+    text-align: center;
+  }
+}
+
+@media only screen  and (min-width: 600px) {
   .hero-hgroup-title {
     font-size: 3.2rem;
   }

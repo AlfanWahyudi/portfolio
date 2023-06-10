@@ -6,8 +6,10 @@ function Hero() {
     <section id="hero">
       <div className="container container__hero">
         <hgroup className="hero-hgroup">
-          <h1 className="hero-hgroup-title">Developer Who Create Amazing Website</h1>
-          <p className="hero-hgroup-subhead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi corporis assumenda odio molestias, tempora quibusdam necessitatibus aut, quos at qui recusandae saepe mollitia amet cupiditate ipsam ea modi quam eius.</p>
+          <h1 className="hero-hgroup-title">Hello, I'm Alfan Wahyudi</h1>
+          <p className="hero-hgroup-subhead">Saya adalah seorang programmer, dan sekarang bekerja sebagai Junior Programmer di PT Akhdani Reka Solusi.
+            Saya suka membuat website yang user friendly, dengan memperhatikan dari segi flow agar user tidak kebingungan.
+            Tools yang sering digunakan ialah JavaScript, PHP, Vite, React, Laravel, MySQL.</p>
         </hgroup>
         <div className="hero-cta">
           <button className="btn btn-link btn-link__primary-hover">
