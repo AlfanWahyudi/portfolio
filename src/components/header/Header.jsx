@@ -12,6 +12,14 @@ function Header() {
     setMenuOpen(!menuOpen);
   }
 
+  const disableScrollPage = () => {
+    if (menuOpen) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
+  }
+
   window.addEventListener('resize', () => {
     const width = document.body.clientWidth;
 
@@ -19,6 +27,8 @@ function Header() {
       setMenuOpen(false);
     }
   });
+
+  disableScrollPage();
 
   return (
     <header>
@@ -30,13 +40,13 @@ function Header() {
         <nav className={`navbar ${menuOpen ? 'open' : ''}`}>
           <ul className="nav">
             <li className="nav-item">
-              <a href="#home" onClick={toggleMenu} className="nav-link">Home</a>
+              <a href="#home" onClick={menuOpen ? toggleMenu : ''} className="nav-link">Home</a>
             </li>
             <li className="nav-item">
-              <a href="#projects" onClick={toggleMenu} className="nav-link">Projects</a>
+              <a href="#projects" onClick={menuOpen ? toggleMenu : ''} className="nav-link">Projects</a>
             </li>
             <li className="nav-item">
-              <a href="#contact" onClick={toggleMenu} className="nav-link">Contact</a>
+              <a href="#contact" onClick={menuOpen ? toggleMenu : ''} className="nav-link">Contact</a>
             </li>
           </ul>
           <div className="divider__vertical-header"></div>

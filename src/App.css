@@ -90,7 +90,8 @@ a {
   border-top: 1.5px solid #D7D7D7;
 }
 
-.no-scroll-y {
+.no-scroll {
+  height: 100%;
   overflow: hidden !important;
 }
 
