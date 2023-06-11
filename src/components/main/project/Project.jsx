@@ -5,9 +5,9 @@ import github from '../../../assets/icons/github.svg';
 import boxArrowUpWhite from '../../../assets/icons/box-arrow-up-right-white.svg';
 
 function Project() {
-  const projects = Projects.reverse().map((project) => {
+  const projects = Projects.map((project) => {
     return (
-      <article className="card-project">
+      <article key={project.id} className="card-project">
         <img src={project.img} className="project-img" alt="project img thumbnail" />
         <div className="project-desc">
           <h3 className="project-title">{project.title}</h3>
@@ -29,7 +29,7 @@ function Project() {
         </div>
       </article>
     );
-  });
+  }).reverse();
   
   return (
     <section id="projects">
