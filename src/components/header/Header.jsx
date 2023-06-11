@@ -30,13 +30,13 @@ function Header() {
         <nav className={`navbar ${menuOpen ? 'open' : ''}`}>
           <ul className="nav">
             <li className="nav-item">
-              <a href="#home" className="nav-link">Home</a>
+              <a href="#home" onClick={toggleMenu} className="nav-link">Home</a>
             </li>
             <li className="nav-item">
-              <a href="#projects" className="nav-link">Projects</a>
+              <a href="#projects" onClick={toggleMenu} className="nav-link">Projects</a>
             </li>
             <li className="nav-item">
-              <a href="#contact" className="nav-link">Contact</a>
+              <a href="#contact" onClick={toggleMenu} className="nav-link">Contact</a>
             </li>
           </ul>
           <div className="divider__vertical-header"></div>

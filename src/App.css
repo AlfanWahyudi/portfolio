@@ -155,6 +155,10 @@ a {
     gap: 0;
   }
 
+  .project-title {
+    font-size: 1.8rem;
+  }
+
   .project-desc {
     justify-content: center;
     margin-right: 4%;
