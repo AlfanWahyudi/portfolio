@@ -40,13 +40,13 @@ function Header() {
         <nav className={`navbar ${menuOpen ? 'open' : ''}`}>
           <ul className="nav">
             <li className="nav-item">
-              <a href="#home" onClick={menuOpen ? toggleMenu : ''} className="nav-link">Home</a>
+              <a href="#home" onClick={menuOpen ? toggleMenu : () => {}} className="nav-link">Home</a>
             </li>
             <li className="nav-item">
-              <a href="#projects" onClick={menuOpen ? toggleMenu : ''} className="nav-link">Projects</a>
+              <a href="#projects" onClick={menuOpen ? toggleMenu : () => {}} className="nav-link">Projects</a>
             </li>
             <li className="nav-item">
-              <a href="#contact" onClick={menuOpen ? toggleMenu : ''} className="nav-link">Contact</a>
+              <a href="#contact" onClick={menuOpen ? toggleMenu : () => {}} className="nav-link">Contact</a>
             </li>
           </ul>
           <div className="divider__vertical-header"></div>
