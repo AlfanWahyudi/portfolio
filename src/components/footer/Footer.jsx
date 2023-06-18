@@ -42,7 +42,7 @@ function Footer() {
             </ul>
         </section>
         <section id="copyRight" className="copy-right">
-          <p>&#169; {currentYear} Alfan Wahyudi </p>
+          <p>&#169; {currentYear} Portfolio by Alfan Wahyudi </p>
         </section>
       </div>
     </footer>
