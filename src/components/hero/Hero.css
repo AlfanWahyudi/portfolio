@@ -1,5 +1,5 @@
 .container__hero {
-  min-height: 55rem;
+  min-height: 50rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -8,7 +8,7 @@
 }
 
 .hero-hgroup {
-  max-width: 80rem;
+  max-width: 75rem;
   text-align: center;
   margin-bottom: 3rem;
 }
@@ -20,6 +20,10 @@
 .hero-hgroup-title {
   font-size: 2.4rem;
   margin-bottom: 2rem;
+}
+
+.hero-hgroup-subhead {
+  line-height: 1.7;
 }
 
 .hero-cta {
