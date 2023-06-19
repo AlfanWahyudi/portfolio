@@ -101,7 +101,7 @@ a {
   }
 }
 
-@media only screen  and (min-width: 600px) {
+@media only screen  and (min-width: 620px) {
   .hero-hgroup-title {
     font-size: 3.2rem;
   }
@@ -151,9 +151,9 @@ a {
   }
 
   .card-project {
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    gap: 0;
+    grid-template-areas: 
+      "desc img";
+    grid-auto-columns: 1fr;
   }
 
   .project-title {
@@ -165,19 +165,7 @@ a {
     margin-right: 4%;
   }
 
-  .project-img {
-    width: 50%;
-    max-width: 487px;
-    max-height: 303px;
-  }
-
   .project-actions {
     justify-content: left;
-  }
-}
-
-@media only screen  and (min-width: 700px){
-  .project-img {
-    width: 100%;
   }
 }
