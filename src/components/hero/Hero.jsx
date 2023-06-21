@@ -12,7 +12,7 @@ function Hero() {
             Tools that are often used are JavaScript, PHP, Webpack, React, Laravel, and MySQL.</p>
         </hgroup>
         <div className="hero-cta">
-          <button className="btn btn-link btn-link__primary-hover">
+          <button className="btn btn-link btn-link__primary">
             <a href="#contact">Contact</a>
           </button>
           <button className="btn btn-link">

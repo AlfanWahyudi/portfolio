@@ -17,7 +17,7 @@
     "desc";
   gap: 1.3em;
   padding-top: 1.5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 4rem;
 }
 
 .project-img {
@@ -27,7 +27,7 @@
   width: 100%;
   min-height: 180px;
   max-height: 290px;
-  border-radius: 1.2rem;
+  border-radius: 1.4rem;
   -webkit-box-shadow: 1px 1px 10px 0px rgba(212,212,212,1);
   -moz-box-shadow: 1px 1px 10px 0px rgba(212,212,212,1);
   box-shadow: 1px 1px 10px 0px rgba(212,212,212,1);

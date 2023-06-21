@@ -33,7 +33,7 @@ function Header() {
   return (
     <header>
       <div className="container container__header">
-        <a href="/" className="">Alfan Wahyudi</a>
+        <a href="/" className="header-home">Alfan Wahyudi</a>
         <button className="btn-menu" onClick={toggleMenu}>
           <img src={menuOpen ? close : menu} className="btn__menu-img" alt="Menu icon" />
         </button>

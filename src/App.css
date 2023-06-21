@@ -37,6 +37,11 @@ a {
   font-family: inherit;
   font-weight: 500;
   cursor: pointer;
+  transition: background-color 200ms;
+}
+
+.btn:hover {
+  background-color: #f5f5f5;
 }
 
 .btn > * {
@@ -63,24 +68,20 @@ a {
   border-radius: 30rem;
 }
 
-.btn-link__primary,
-.btn-link__primary-hover {
-  transition: background-color 200ms;
+.btn-link__primary {
+  transition: opacity 200ms;
   border-color: var(--green);
+  background-color: var(--green);
+}
+
+.btn-link__primary:hover {
+  opacity: 0.9;
   background-color: var(--green);
 }
 
 .btn-link__primary > a,
 .btn-link__primary-hover > a {
   color: white;
-}
-
-.btn-link__primary-hover:hover {
-  background-color: white;
-}
-
-.btn-link__primary-hover > a:hover {
-  color: var(--green);
 }
 
 .divider {
